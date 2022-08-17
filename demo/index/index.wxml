@@ -2,7 +2,7 @@
     <view class="body">
         <view class="title">
             <text class="text">协助开发</text>
-            <text class="desc">好记性不如烂笔头 - 汇总开发中遇到的各种问题</text>
+            <text class="desc">好记性不如烂笔头 - 汇总开发中用到的组件</text>
         </view>
         <view class="card" wx:for="{{data}}" wx:key="index">
             <view class="card-nav" bindtap="changeActive" data-index="{{index}}">
