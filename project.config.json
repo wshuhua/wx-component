@@ -40,8 +40,8 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.25.2",
-  "appid": "wx1fa4e3b198130a03",
-  "projectname": "canvas%20drawImage%20video",
+  "appid": "wxb54c879ac07264ff",
+  "projectname": "wx-demos",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "editorSetting": {
