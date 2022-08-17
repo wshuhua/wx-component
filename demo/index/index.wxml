@@ -1,0 +1,34 @@
+<view class="page" style="padding-bottom: {{bottomPadding}}px">
+    <view class="body">
+        <view class="title">
+            <text class="text">协助开发</text>
+            <text class="desc">好记性不如烂笔头 - 汇总开发中遇到的各种问题</text>
+        </view>
+        <view class="card" wx:for="{{data}}" wx:key="index">
+            <view class="card-nav" bindtap="changeActive" data-index="{{index}}">
+                <view class="card-title">{{item.title}}</view>
+                <image src="/images/arrow.png" alt="" class="{{activeIndex === index ? 'arrow' : 'arrow--rotate'}}" />
+            </view>
+            <view class="{{activeIndex === index ? 'card-container' : 'card-container--hidden'}}">
+                <view class="card-sub-nav" wx:for="{{item.list}}" wx:for-item="items" wx:key="title">
+                    <view class="card-sub-title">{{items.title}}</view>
+                    <image src="/images/arrow.png" alt="" class="arrow-left" />
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="footer">
+        <button class='item' open-type="share">
+            <image src="/images/share.png" alt="" class="share" />
+            <text>分享</text>
+        </button>
+        <button class='item' bindtap="contact">
+            <image src="/images/contact.png" alt="" class="contact" />
+            <text>联系</text>
+        </button>
+        <button class='item' open-type="feedback">
+            <image src="/images/feedback.png" alt="" class="feedback" />
+            <text>反馈</text>
+        </button>
+    </view>
+</view>

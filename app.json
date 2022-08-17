@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "demo/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "组件demo",
+    "renderingMode": "mixed",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
