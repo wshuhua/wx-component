@@ -10,7 +10,7 @@
                 <image src="/images/arrow.png" alt="" class="{{activeIndex === index ? 'arrow' : 'arrow--rotate'}}" />
             </view>
             <view class="{{activeIndex === index ? 'card-container' : 'card-container--hidden'}}">
-                <view class="card-sub-nav" wx:for="{{item.list}}" wx:for-item="items" wx:key="title">
+                <view class="card-sub-nav" wx:for="{{item.list}}" wx:for-item="items" wx:key="title" bindtap="linkUrl" data-url="{{items.url}}">
                     <view class="card-sub-title">{{items.title}}</view>
                     <image src="/images/arrow.png" alt="" class="arrow-left" />
                 </view>

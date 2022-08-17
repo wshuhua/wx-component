@@ -93,8 +93,12 @@ Page({
       content: '请添加微信号【wsh1730129114】',
       showCancel: false
     })
-    
-
+  },
+  linkUrl: function (e) {
+    const { url } = e.currentTarget.dataset;
+    wx.navigateTo({
+      url
+    })
   },
   /**
    * 生命周期函数--监听页面加载

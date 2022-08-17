@@ -1,0 +1,21 @@
+.card {
+    border-radius: 4px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+.loading {
+    text-align: center;
+    width: 100%;
+    font-size: 24rpx;
+    color: #BDBDBD;
+}
+.text {
+    text-align: center;
+    width: 100%;
+    font-size: 24rpx;
+    color: #BDBDBD;
+}
