@@ -2,7 +2,8 @@
   "pages": [
     "demo/index/index",
     "demo/move/move",
-    "demo/setData/setData"
+    "demo/setData/setData",
+    "demo/waterFlow/waterFlow"
   ],
   "window": {
     "backgroundTextStyle": "light",

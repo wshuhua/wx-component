@@ -62,7 +62,7 @@ Page({
         },
         {
           title: '瀑布流',
-          url: '/demo/waterfall/waterfall',
+          url: '/demo/waterFlow/waterFlow',
         },
         {
           title: '自定义键盘',

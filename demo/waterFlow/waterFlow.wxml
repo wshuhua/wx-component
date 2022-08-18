@@ -1,0 +1,14 @@
+<view>
+    <view class="container">
+        <view class="picture">
+            <block wx:for="{{ listData }}" wx:key="index">
+                <view class="item">
+                    <view>
+                        <image lazy-load mode="widthFix" src="{{ item.url }}" />
+                    </view>
+                </view>
+            </block>
+        </view>
+        <view wx:if="{{ reachBottom }}" class="tip">到底部了</view>
+    </view>
+</view>
