@@ -1,6 +1,8 @@
 {
   "pages": [
-    "demo/index/index"
+    "demo/index/index",
+    "demo/move/move",
+    "demo/setData/setData"
   ],
   "window": {
     "backgroundTextStyle": "light",

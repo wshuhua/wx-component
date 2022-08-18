@@ -1,0 +1,31 @@
+var startX = 0
+var startY = 0
+var lastLeft = lastTop = 0
+
+function touchstart(event) {
+    var touch = event.touches || event.changedTouches
+    startX = touch[0].pageX
+    startY = touch[0].pageY
+}
+
+function touchmove(e, ins) {
+    var event = e.touches || e.changedTouches;
+    var touch = event[0]
+    var pageX = touch.pageX
+    var pageY = touch.pageY
+    var left = pageX - startX + lastLeft
+    var top = pageY - startY + lastTop
+    startX = pageX
+    startY = pageY
+    lastLeft = left
+    lastTop = top
+    var query = ins.selectComponent('.img');
+    query.setStyle({
+        left: left + 'px',
+        top: top + 'px'
+    })
+}
+module.exports = {
+    touchstart: touchstart,
+    touchmove: touchmove,
+}

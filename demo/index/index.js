@@ -57,8 +57,8 @@ Page({
           url: '/demo/setData/setData',
         },
         {
-          title: '拖拽，缩放和旋转',
-          url: '/demo/wxs/wxs',
+          title: '拖拽，缩放',
+          url: '/demo/move/move',
         },
         {
           title: '瀑布流',
