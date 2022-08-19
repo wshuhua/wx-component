@@ -1,4 +1,4 @@
-<mp-video-swiper 
+<video-swiper 
   class="video-swiper" 
   video-list="{{videoList}}" 
   bindplay="onPlay"
@@ -9,4 +9,4 @@
   bindwaiting="onWaiting"
   bindprogress="onProgress"
   bindloadedmetadata="onLoadedMetaData"
-></mp-video-swiper>
+></video-swiper>

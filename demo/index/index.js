@@ -71,6 +71,10 @@ Page({
         {
           title: '仿抖音视频播放',
           url: '/demo/video-swiper/video-swiper',
+        },
+        {
+          title: 'tabs',
+          url: '/demo/tabs/tabs',
         }
       ]
     }],

@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "mp-video-swiper": "../../components/video-swiper/index"
+    "video-swiper": "../../components/video-swiper/index"
   }
 }
