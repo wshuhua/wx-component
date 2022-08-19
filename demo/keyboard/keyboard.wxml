@@ -1,0 +1,31 @@
+<view class="page_box" catchtap="hindKeyboard">
+    <view class="input_view" catchtap="hindKeyboard">
+        <text class="title">金额：</text>
+        <view class="input_box" catchtap="showKeyboard">
+            <text class="input_label">￥</text>
+            <view class="content" wx:if="{{content.length}}">
+                <view wx:for="{{content}}" wx:key="index" data-str-index="{{index + 1}}" catchtap="getStrPosition">
+                    <view class="number-block">
+                        {{item}}
+                        <view class="cursor cursor-insert cursor-insert0" wx:if="{{cursorIndex === 0 && cursorIndex === index}}"></view>
+                        <view class="cursor cursor-insert" wx:if="{{cursorIndex && cursorIndex === index + 1}}"></view>
+                    </view>
+                </view>
+            </view>
+            <view class="cursor" wx:if="{{cursorIndex === -1 && keyShow}}"></view>
+            <text class="default-content" wx:if="{{!content.length}}">{{defaultContent}}</text>
+        </view>
+    </view>
+    <!-- 键盘 -->
+    <view class="keyboard {{keyShow && 'hind_box'}}">
+        <view class="key_box">
+            <view class="keys {{index % 3 === 0 && 'border0'}}" wx:for='{{KeyboardKeys}}' wx:key="index" catchtap="keyTap" data-keys="{{item}}">
+                <block wx:if="{{item === 'back' ? false : true}}">{{item}}</block>
+                <block wx:else>
+                    <image class="clear" src="/images/clear.png" alt="" mode="widthFix" />
+                </block>
+                
+            </view>
+        </view>
+    </view>
+</view>

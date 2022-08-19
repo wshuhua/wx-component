@@ -1,0 +1,128 @@
+page {
+    background: #f3f7f7;
+    height: 100%;
+}
+
+.page_box {
+    width: 100%;
+    height: 100%;
+    background: #f3f7f7;
+    overflow: hidden;
+}
+
+.input_view {
+    width: 700rpx;
+    height: 500rpx;
+    background: #fff;
+    margin: 25rpx auto;
+    border-radius: 10rpx;
+    padding: 40rpx;
+    box-sizing: border-box;
+}
+
+.title {
+    display: block;
+    line-height: 90rpx;
+    font-size: 30rpx;
+    color: #aaa;
+}
+
+.input_box {
+    display: flex;
+    align-items: center;
+    padding: 20rpx 0;
+    height: 90rpx;
+    border-bottom: 1px solid #efefef;
+}
+
+.input_label {
+    font-size: 35rpx;
+    font-weight: bold;
+    margin-right: 5rpx;
+}
+
+.content {
+    display: flex;
+    font-size: 80rpx;
+    line-height: 90rpx;
+    font-weight: 700;
+}
+
+.number-block {
+    position: relative;
+}
+
+.cursor-insert {
+    position: absolute;
+    top: 0rpx;
+    right: -1rpx;
+}
+
+.cursor-insert0 {
+    right: auto;
+    left: -1rpx;
+}
+.cursor {
+    width: 2rpx;
+    height: 90rpx;
+    background: #666;
+    border-radius: 6rpx;
+    animation: twinkling 0.9s infinite;
+}
+
+@-webkit-keyframes twinkling {
+    0% {
+        background: #fff;
+    }
+
+    100% {
+        background: #666;
+    }
+}
+
+.default-content {
+    color: #999;
+    font-size: 38rpx;
+    font-weight: 600;
+}
+
+
+/* 键盘 */
+.keyboard {
+    height: 0;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: height 0.3s;
+}
+
+.hind_box {
+    height: 440rpx;
+}
+
+.key_box {
+    overflow: hidden;
+}
+
+.keys {
+    box-sizing: border-box;
+    float: left;
+    width: 250rpx;
+    height: 90rpx;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+
+.border0 {
+    border-left: 0;
+}
+
+.clear {
+    width: 40rpx;
+}
