@@ -1,0 +1,44 @@
+.noticebar {
+    position: relative;
+    height: 96rpx;
+    width: 100%;
+    background-color: #ffefc2;
+}
+
+.marquee {
+    width: 100%;
+    position: absolute;
+    height: 36rpx;
+    line-height: 36rpx;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff6229;
+    font-size: 24rpx;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee text {
+    display: inline-block;
+    animation: move 6s linear infinite;
+}
+
+@-webkit-keyframes move {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: -100%;
+    }
+}
+
+@keyframes move {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: -100%;
+    }
+}

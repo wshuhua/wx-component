@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "noticebar": "../../components/noticebar/index"
+  }
+}

@@ -1,4 +1,3 @@
-// pages/inputs/inputs.js
 Page({
     data: {
         content: [], // 输入的金额
