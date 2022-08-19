@@ -67,6 +67,10 @@ Page({
         {
           title: '自定义键盘',
           url: '/demo/keyboard/keyboard',
+        },
+        {
+          title: '仿抖音视频播放',
+          url: '/demo/video-swiper/video-swiper',
         }
       ]
     }],

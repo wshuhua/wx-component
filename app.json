@@ -3,7 +3,8 @@
     "demo/index/index",
     "demo/move/move",
     "demo/setData/setData",
-    "demo/waterFlow/waterFlow"
+    "demo/waterFlow/waterFlow",
+    "demo/video-swiper/video-swiper"
   ],
   "window": {
     "backgroundTextStyle": "light",
