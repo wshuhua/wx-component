@@ -1,0 +1,38 @@
+<view class="vtabs">
+  <view class="vtabs-bar__wrp {{tabBarClass}}">
+    <scroll-view 
+      scroll-y
+      class="vtabs-bar__scrollview"
+      scroll-into-view="vtabs-item__{{currentView}}"
+    >
+      <view class="vtabs-bar__content">
+        <block wx:for="{{vtabs}}" wx:key="title">
+          <view 
+            id="vtabs-item__{{index}}"
+            class="vtabs-bar__item"
+            data-index="{{index}}"
+            style="background-color: {{activeTab === index ? tabActiveBgColor : tabInactiveBgColor}}; color: {{activeTab === index ? tabActiveTextColor : tabInactiveTextColor}}; border-left-color: {{activeTab === index ? tabLineColor : tabInactiveBgColor}}"
+            bindtap="handleTabClick"
+          >
+            <view class="vtabs-bar__title {{activeTab === index ? activeClass : ''}}">
+              <text>{{item.title}}</text>
+            </view>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="vtabs-content__wrp">
+    <scroll-view 
+      scroll-y
+      class="vtabs-content__scrollview" 
+      scroll-top="{{contentScrollTop}}"
+      scroll-with-animation="{{animation}}"
+      bindscroll="handleContentScroll"
+    >
+      <view class="vtabs-content">
+        <slot ></slot>
+      </view>
+    </scroll-view>
+  </view>
+</view>

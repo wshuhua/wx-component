@@ -44,10 +44,6 @@ Page({
         {
           title: 'noticebar - 跑马灯效果的通知栏',
           url: '/demo/noticebar/noticebar',
-        },
-        {
-          title: 'toast',
-          url: '/demo/toast/toast',
         }
       ]
     }, {
@@ -75,6 +71,10 @@ Page({
         {
           title: 'tabs',
           url: '/demo/tabs/tabs',
+        },
+        {
+          title: '左右两栏经典tabs',
+          url: '/demo/vtabs/vtabs',
         }
       ]
     }],
