@@ -1,5 +1,3 @@
 <view class="noticebar">
-    <view class="marquee">
-        <text>{{text}}</text>
-    </view>
+    <text class="text">{{text}}</text>
 </view>

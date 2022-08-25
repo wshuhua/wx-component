@@ -1,44 +1,41 @@
 .noticebar {
-    position: relative;
-    height: 96rpx;
     width: 100%;
-    background-color: #ffefc2;
-}
-
-.marquee {
-    width: 100%;
-    position: absolute;
-    height: 36rpx;
-    line-height: 36rpx;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #ff6229;
-    font-size: 24rpx;
+    margin: 10rpx auto;
     overflow: hidden;
+    background: #ff6229;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.text {
     white-space: nowrap;
-}
-
-.marquee text {
+    animation: 5s loop linear infinite normal;
     display: inline-block;
-    animation: move 6s linear infinite;
+    vertical-align: top;
+    font-size: 26rpx;
+    color: #fff;
 }
 
-@-webkit-keyframes move {
-    from {
-        margin-left: 100%;
+@keyframes loop {
+    0% {
+        transform: translateX(350px);
+        -webkit-transform: translateX(350px);
     }
 
-    to {
-        margin-left: -100%;
+    100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
     }
 }
 
-@keyframes move {
-    from {
-        margin-left: 100%;
+@-webkit-keyframes loop {
+    0% {
+        transform: translateX(300px);
+        -webkit-transform: translateX(300px);
     }
 
-    to {
-        margin-left: -100%;
+    100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
     }
 }
