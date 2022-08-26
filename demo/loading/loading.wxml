@@ -1,3 +1,6 @@
 <view class="loading-wrap">
-    <loading id="loading"/>
+   <view class="btn-group">
+      <button type="{{type === item ? 'primary' : 'default'}}" data-type="{{item}}" bindtap="changeType" wx:for="{{typeList}}" wx:key="index">{{item}}</button>
+   </view>
+    <loading id="loading1" type="{{type}}"/>
 </view>

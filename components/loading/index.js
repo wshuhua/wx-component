@@ -7,6 +7,7 @@ Component({
      */
     properties: {
         type: String,
+        value: 'bounce'
     },
 
     /**

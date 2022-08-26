@@ -2,9 +2,31 @@
     <view class="loading-mask" wx:if="{{maskState}}"></view>
     <view class="loading-main">
         <view class="loading-content">
-            <!-- <view class="loading-image">
-                <image src="../../images/loading.png"></image>
-            </view> -->
+            <view wx:if="{{type === 'square'}}" class="spinner"></view>
+            <view wx:if="{{type === 'dot'}}" class="sk-chase">
+                <view class="sk-chase-dot"></view>
+                <view class="sk-chase-dot"></view>
+                <view class="sk-chase-dot"></view>
+                <view class="sk-chase-dot"></view>
+                <view class="sk-chase-dot"></view>
+                <view class="sk-chase-dot"></view>
+            </view>
+            <view class="rect" wx:if="{{type === 'rect'}}">
+                <view class="rect1"></view>
+                <view class="rect2"></view>
+                <view class="rect3"></view>
+                <view class="rect4"></view>
+                <view class="rect5"></view>
+            </view>
+            <view wx:if="{{type === 'bounce'}}" class="bounce">
+                <view class="bounce1"></view>
+                <view class="bounce2"></view>
+                <view class="bounce3"></view>
+            </view>
+            <view wx:if="{{type === 'circle'}}" class="circle">
+                <view class="circlr1"></view>
+                <view class="circlr2"></view>
+            </view>
             <view class="loading-text">{{loadingText}}</view>
         </view>
     </view>

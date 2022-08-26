@@ -3,13 +3,21 @@ Page({
      * 页面的初始数据
      */
     data: {
-        type: ''
+        type: 'square',
+        typeList: ['square', 'dot', 'rect', 'bounce', 'circle']
+    },
+    changeType: function(e) {
+      const _type = e.currentTarget.dataset.type;
+      this.setData({
+        type: _type
+      })
     },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function () {
-        this.selectComponent("#loading").show();
+        this.selectComponent("#loading1").show();
+        // this.selectComponent("#loading2").show();
 
     },
 
