@@ -1,0 +1,6 @@
+<view>
+    <button bindtap="openActionsheet" type="primary">打开</button>
+    <actionsheet bindactiontap="closeActionSheet" show="{{showActionsheet}}" actions="{{groups}}">
+        <view class="content">自定义内容</view>
+    </actionsheet>
+</view>

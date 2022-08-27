@@ -35,7 +35,7 @@ Page({
         },
         {
           title: 'actionsheet - 从下面冒出来的效果',
-          url: '/demo/actionsheet/request',
+          url: '/demo/actionsheet/actionsheet',
         },
         {
           title: 'loading',
