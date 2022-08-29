@@ -1,0 +1,6 @@
+<view>
+    <button bindtap="open" type="primary">打开</button>
+    <dialog bindactiontap="close" show="{{visible}}" actions="{{groups}}">
+        <view class="content">自定义弹窗内容</view>
+    </dialog>
+</view>
