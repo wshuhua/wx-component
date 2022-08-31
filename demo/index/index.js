@@ -25,10 +25,7 @@ Page({
       ]
     }, {
       title: '入门学习',
-      list: [{
-          title: '下拉刷新',
-          url: '/demo/scrollview/scrollview',
-        },
+      list: [
         {
           title: '弹框',
           url: '/demo/dialog/dialog',

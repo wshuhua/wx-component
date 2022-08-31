@@ -1,5 +1,7 @@
 {
   "usingComponents": {},
   "onReachBottomDistance": 100,
-  "navigationBarTitleText": "setData优化"
+  "navigationBarTitleText": "setData优化",
+	"enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
 }
