@@ -1,73 +1,39 @@
-
 Component({
-    options: {
-        multipleSlots: true,
-        addGlobalClass: true
-    },
+    /**
+     * 组件的属性列表
+     */
     properties: {
-        title: {
-            type: String,
-            value: ''
-        },
-        showCancel: {
-            type: Boolean,
-            value: true
-        },
-        cancelText: {
-            type: String,
-            value: '取消'
-        },
-        maskClass: {
-            type: String,
-            value: ''
-        },
-        extClass: {
-            type: String,
-            value: ''
-        },
-        maskClosable: {
-            type: Boolean,
-            value: true
-        },
-        mask: {
-            type: Boolean,
-            value: true
-        },
-        show: {
-            type: Boolean,
-            value: false
-        },
-        actions: {
-            type: Array,
-            value: [],
-            observer: '_groupChange'
-        }
+      title: {
+        type: String
+      },
+      show: {
+        type: Boolean,
+        value: false
+      },
+      showCloseBtn:{
+        type:Boolean,
+        value: true
+      }
     },
+  
+    /**
+     * 组件的初始数据
+     */
+    data: {
+      show: false,
+      showCloseBtn:false
+    },
+  
+    /**
+     * 组件的方法列表
+     */
     methods: {
-        _groupChange: function _groupChange(e) {
-            if (e.length > 0 && typeof e[0] !== 'string' && !(e[0] instanceof Array)) {
-                this.setData({
-                    actions: [this.data.actions]
-                });
-            }
-        },
-        buttonTap: function buttonTap(e) {
-            var _e$currentTarget$data = e.currentTarget.dataset,
-                value = _e$currentTarget$data.value,
-                groupindex = _e$currentTarget$data.groupindex,
-                index = _e$currentTarget$data.index;
-
-            this.triggerEvent('actiontap', { value: value, groupindex: groupindex, index: index });
-        },
-        closeActionSheet: function closeActionSheet(e) {
-            var type = e.currentTarget.dataset.type;
-
-            if (this.data.maskClosable || type) {
-                this.setData({
-                    show: false
-                });
-                this.triggerEvent('close');
-            }
-        }
+      colose(){
+        this.setData({
+            show: false
+        });
+        this.triggerEvent('closeRule')
+      }
     }
-});
+  })
+  

@@ -1,166 +1,44 @@
-.mask {
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-  }
-  
-  .mask_transparent {
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  
-  .actionsheet {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    backface-visibility: hidden;
-    z-index: 5000;
-    width: 100%;
-    background-color: transparent;
-    transition: transform 0.3s;
-    overflow: hidden;
-  }
-  
-  .actionsheet__title {
-    position: relative;
-    height: 56px;
-    padding: 0 24px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    font-size: 12px;
-    color: rgba(0, 0, 0, 0.5);
-    line-height: 1.4;
-    background: #fff;
-  }
-  
-  .actionsheet__title:before {
-    content: " ";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 1px;
-    border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.1);
-  }
-  
-  .actionsheet__title .actionsheet__title-text {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-  }
-  
-  .actionsheet__menu {
-    color: rgba(0, 0, 0, 0.9);
-    background-color: #fff;
-  }
-  
-  .actionsheet__action {
-    margin-top: 8px;
-    background-color: #fff;
-    padding-bottom: constant(safe-area-inset-bottom);
-    padding-bottom: env(safe-area-inset-bottom);
-  }
-  
-  .actionsheet__cell {
-    position: relative;
-    padding: 16px;
-    text-align: center;
-    font-size: 17px;
-    line-height: 1.41176471;
-  }
-  
-  .actionsheet__cell:before {
-    content: " ";
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    height: 1px;
-    border-top: 1rpx solid rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.1);
-  }
-  
-  .actionsheet__cell:active {
-    background-color: #ececec;
-  }
-  
-  .actionsheet__cell:first-child:before {
-    display: none;
-  }
-  
-  .actionsheet__cell_warn {
-    color: #fa5151;
-  }
-  
-  .skin_android .actionsheet {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    bottom: auto;
-    transform: translate(-50%, -50%);
-    width: 274px;
-    box-sizing: border-box;
-    backface-visibility: hidden;
-    background: transparent;
-    transition: transform 0.3s;
-    border-radius: 2px;
-  }
-  
-  .skin_android .actionsheet__action {
-    display: none;
-  }
-  
-  .skin_android .actionsheet__menu {
-    border-radius: 2px;
-    box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.1);
-  }
-  
-  .skin_android .actionsheet__cell {
-    padding: 16px;
-    font-size: 17px;
-    line-height: 1.41176471;
-    color: rgba(0, 0, 0, 0.9);
-    text-align: left;
-  }
-  
-  .skin_android .actionsheet__cell:first-child {
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-  }
-  
-  .skin_android .actionsheet__cell:last-child {
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-  }
-  
-  .actionsheet_toggle {
-    transform: translate(-50%, -50%);
-  }
-  
-  .mask.mask_hidden {
-    opacity: 0;
-    transform: scale3d(1, 1, 0);
-  }
-  
-  .mask {
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
-    transition: all 0.3s;
-  }
-  
-  
+.dialog_mask_layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+.dialog_modal_box {
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fafafa;
+  border-radius: 3px;
+  min-width: 400rpx;
+}
+
+.dialog_title {
+  color: #171717;
+  padding: 16rpx;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.dialog_content {
+  overflow-y: scroll;
+  padding: 16rpx;
+  min-height: 300rpx;
+  max-height: calc(100vh - 300px);
+}
+
+.dialog_close {
+  width: 56rpx;
+  height: 56rpx;
+  position: absolute;
+  bottom: -100rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
