@@ -4,7 +4,8 @@
     "demo/move/move",
     "demo/setData/setData",
     "demo/waterFlow/waterFlow",
-    "demo/video-swiper/video-swiper"
+    "demo/video-swiper/video-swiper",
+    "demo/compass/compass"
   ],
   "window": {
     "backgroundTextStyle": "light",

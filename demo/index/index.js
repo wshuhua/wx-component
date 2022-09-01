@@ -9,6 +9,10 @@ Page({
       list: [{
           title: '硬件数据监听 - 加速计',
           url: '/demo/hardware/hardware',
+        },
+        {
+          title: '硬件数据监听 - 罗盘',
+          url: '/demo/compass/compass',
         }
       ]
     }, {

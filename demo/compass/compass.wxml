@@ -1,0 +1,6 @@
+<view class="img">
+    <image animation="{{animation}}" mode="aspectFit" src='/images/compass.png'></image>
+</view>
+<view class="desc">
+    {{angle}} {{compass}}°
+</view>
