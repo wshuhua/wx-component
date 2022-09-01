@@ -7,20 +7,8 @@ Page({
     data: [{
       title: '工具',
       list: [{
-          title: '硬件数据监听',
+          title: '硬件数据监听 - 加速计',
           url: '/demo/hardware/hardware',
-        },
-        {
-          title: '资源-全国城市列表',
-          url: '/demo/citylist/citylist',
-        },
-        {
-          title: 'promise封装request工具',
-          url: '/demo/request/request',
-        },
-        {
-          title: '表单组件验证工具',
-          url: '/demo/form/form',
         }
       ]
     }, {

@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="view-row">
+        hardware—水平仪
+    </view>
+    <view class="title">加速计实现(请竖直摆放手机)</view>
+    <view class="line" style="background:{{backgroundColor}};transform: rotate({{rotateXY}}deg);"></view>
+    <view class="view-row sub-title">
+        水平偏移{{degreesXY}}°
+    </view>
+</view>
